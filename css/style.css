@@ -1,5 +1,4 @@
 
-/* Fonts import */
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Regular.eot');
@@ -57,7 +56,8 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 a {
@@ -265,15 +265,22 @@ body {
 }
 
 .intro .content-bottom .list-tech ul {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 100%;
 }
 
 .intro .content-bottom .list-tech ul li {
     width: 33.3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 50%;
 }
 
@@ -334,11 +341,15 @@ body {
 
 .slider {
     background: #F7F7F7;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #F7F7F7), color-stop(50%, #fff));
+    background: -o-linear-gradient(left, #F7F7F7 50%, #fff 50%);
     background: linear-gradient(to right, #F7F7F7 50%, #fff 50%);
 }
 
 .slider .d-flex {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .slider .slider__content {
@@ -354,7 +365,9 @@ body {
 
 .slider .slider__content .swiper-wrapper .swiper-slide .top {
     margin-bottom: 25px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .slider .slider__content .swiper-wrapper .swiper-slide .top .count {
@@ -420,8 +433,13 @@ body {
 
 .slider .slider__nav .swiper-pagination {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: right;
     
 }
@@ -476,6 +494,8 @@ body {
 }
 
 .slider .btn-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 820px;
@@ -492,7 +512,11 @@ body {
     left: auto;
     top: auto;
     margin: 0;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
 
@@ -508,7 +532,9 @@ body {
 }
 
 .slider .btn-nav .swiper-button.swiper-button-next {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     margin-left: 20px;
 }
 
@@ -717,7 +743,10 @@ body {
     }
 
     .header .nav.active .main-menu {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin-bottom: 20px;
     }
 
@@ -741,12 +770,16 @@ body {
 
     .header .humburger.active div:not(:last-child) {
         margin-bottom: -2px;
-        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
     }
 
     .header .humburger.active div:last-child {
         width: 28px;
-        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
     }
 }
 
@@ -762,7 +795,10 @@ body {
     }
 
     .intro .content-bottom {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .intro .content-bottom .box,
@@ -805,15 +841,21 @@ body {
         position: static;
         top: auto;
         left: auto;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .slider .btn-nav .swiper-button.swiper-button-next {
-        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
     }
 
     .slider .btn-nav .swiper-button.swiper-button-prev {
-        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
     }
 
     .intro .content-bottom .list-tech ul li {
@@ -832,7 +874,10 @@ body {
     }
 
     .case-studies .title-row .wrap {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .case-studies .title-row .name h2 {
